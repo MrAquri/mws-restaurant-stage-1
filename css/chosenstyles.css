@@ -1,0 +1,20 @@
+/* Current restaurant, bigger screen view */
+@media screen and (min-width:576px) {
+	#maincontent {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 40% 30% 30%;
+		grid-template-areas: "Image Adress" "Map Map" "Reviews Reviews";
+	}
+	#restaurant-img { grid-area: Image; }
+	#restaurant-hours { grid-area: Adress; }
+	#map-container {grid-area: Map;}
+	#reviews-container {grid-area: Reviews;}
+	#table {
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	#restaurant-address {
+	  margin: 10px 0 10px 10px;
+}
