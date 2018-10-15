@@ -21,7 +21,7 @@ ul, li {
 	color: #333;
 }
 a {
-	color: orange;
+	color: #FF9933;
 	text-decoration: none;
 }
 a:hover, a:focus {
@@ -95,7 +95,7 @@ nav h1 a {
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-    color: #0275d8;
+    color: #026AC5;
     text-decoration: none;
 }
 
