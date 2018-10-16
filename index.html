@@ -29,22 +29,20 @@
         <label class="hidden" for="filter-options-forAria">Restaurant Filter Options</label>
         <h2 id="filter-options-forAria">Filter Results</h2>
 
-        <label>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" tabindex="0">
+        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" tabindex="0" aria-labelledby="neighborhoods-restaurants">
           <option value="all">All Neighborhoods</option>
         </select>
-        Neighborhood select
-        </label>
+        <label id="neighborhoods-restaurants" class="hidden">Results filtered by neighborhood</label>
 
-        <label>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" tabindex="0">
+
+        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" tabindex="0" aria-labelledby="cuisines-selection">
           <option value="all">All Cuisines</option>
         </select>
-        Cousise select
-        </label>
+        <label id="cuisines-selection" class="hidden">Results filtered by cuisines</label>
+
       </div>
 
-      <label for=""restaurants-list"">Restaurant List</label>
+      <label class="hidden" for=""restaurants-list"">Restaurant List</label>
       <ul id="restaurants-list"></ul>
 
     </section>
@@ -60,7 +58,7 @@
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
   <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script> -->
 
-  <label for="footer">Restaurant Copyright (c) 2017</label>
+  <label class="hidden" for="footer">Restaurant Copyright (c) 2017</label>
   <footer id="footer" role="contentinfo">
     Copyright (c) 2017 <a href="/" tabindex="0"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
