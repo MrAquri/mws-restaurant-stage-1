@@ -15,13 +15,13 @@
 
 <body class="inside">
   <!-- Beginning header -->
-  <header>
+  <header role="banner">
     <!-- Beginning nav -->
-    <nav>
+    <nav role="navigation">
       <h1><a href="/" tabindex="0">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
+    <ul id="breadcrumb" aria-label='Breadcrumb'>
       <li><a href="/" tabindex="0">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
@@ -30,7 +30,7 @@
   <!-- End header -->
 
   <!-- Beginning main -->
-  <main id="maincontent">
+  <main id="maincontent" role="main">
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
       <h2 id="restaurant-name"></h1>
@@ -44,20 +44,24 @@
     </section>
     <!-- end restaurant -->
     <!-- Beginning map -->
+    <label class="hidden" for="map-container">Restaurants Map</label>
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" aria-label='Leaflet Restaurant Maps' role='application'></div>
     </section>
     <!-- End map -->
     <!-- Beginning reviews -->
-    <section id="reviews-container">
-      <ul id="reviews-list"></ul>
+    <label id="reviewssection" class="hidden" >Reviews section</label>
+    <section id="reviews-container" aria-labelledby='reviewssection'>
+      <ul id="reviews-list" aria-labelledby='listofreviews'></ul>
+      <label id="listofreviews" class="hidden" >List of reviews</label>
     </section>
     <!-- End reviews -->
   </main>
   <!-- End main -->
 
   <!-- Beginning footer -->
-  <footer id="footer">
+  <label class="hidden" for="footer">Restaurant Copyright (c) 2017</label>
+  <footer id="footer" role="contentinfo">
     Copyright (c) 2017 <a href="/" tabindex="0"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
   <!-- End footer -->
