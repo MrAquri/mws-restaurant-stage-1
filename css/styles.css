@@ -338,9 +338,6 @@ button:focus {
 	#footer {
 		padding: 5px;
 	}
-	/*Current restaurant page */
-
-}
 
 @media screen and (min-width:418px) {
 	nav {
@@ -392,7 +389,6 @@ button:focus {
 	}
 }
 
-
 @media screen and (min-width: 964px) {
 	#restaurants-list {
 			grid-template-columns: 33% 33% 33%;
@@ -402,7 +398,7 @@ button:focus {
 	}
 }
 
-@media screen (min-width: 1150px) {
+@media screen and (min-width: 1150px) {
 	body {
 		max-width: 1150px;
 		margin-left: auto;
